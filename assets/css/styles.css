@@ -460,3 +460,10 @@ a:focus {
     max-width: inherit;
   }
 }
+
+
+.confirmacion {
+  color: #296038;
+  padding: 10px 0;
+  width: auto;
+}

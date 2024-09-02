@@ -1,6 +1,6 @@
-const formulario = document.querySelector('form');
+const formulario = document.querySelector('#contacto');
+const formNovedades = document.querySelector('#novedades');
 
-console.log(formulario);
 
 formulario.addEventListener('submit', function(event){
     event.preventDefault();
@@ -9,8 +9,12 @@ formulario.addEventListener('submit', function(event){
     const nombre = document.querySelector('#nombre').value
     const mensaje = document.querySelector('#mensaje').value
 
-    alert(`Su mensaje desde el email: ${email} ha sido enviado correctamente`);
+    const confirmacion = document.querySelector('#confirmacion');
+    confirmacion.innerText = "Su mensaje ha sido enviado correctamente"
 
+    
     formulario.reset();
 
 });
+
+
